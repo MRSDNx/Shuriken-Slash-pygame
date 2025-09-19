@@ -33,8 +33,6 @@ class Game:
 
         }
 
-        print(self.assets)
-
         self.clouds = Clouds(self.assets['clouds'], count=16)
         self.player = Player(self, (50, 50), (8, 15))
         self.tilemap = Tilemap(self, tile_size=16)
@@ -60,7 +58,7 @@ class Game:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                    sys.exit
+                    sys.exit()
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_LEFT:
                         self.movement[0] = True
