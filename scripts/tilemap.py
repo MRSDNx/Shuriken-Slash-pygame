@@ -2,6 +2,7 @@ import json
 import pygame
 
 AUTOTILE_MAP = {
+
     tuple(sorted([(1, 0), (0, 1)])): 0,
     tuple(sorted([(1, 0), (0, 1), (-1, 0)])): 1,
     tuple(sorted([(-1, 0), (0, 1)])): 2,
